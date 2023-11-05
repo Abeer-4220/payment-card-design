@@ -16,18 +16,6 @@ body {
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media (max-width: 75rem){
-  .main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 50rem){
-  .main{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 .title {
   background-color: var(--color3);
   border-radius: 50px;
@@ -131,4 +119,19 @@ body {
   color: white;
   background-color: var(--color3);
   border-color: var(--color3);
+}
+@media (max-width: 75rem){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 50rem){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card-container{
+    width: 20rem;
+  }
 }
